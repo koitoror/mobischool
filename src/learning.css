@@ -1,0 +1,92 @@
+.learn {
+  min-width: 0;
+}
+.learn-title {
+  font-size: 26px;
+  font-weight: 650;
+  letter-spacing: -0.6px;
+}
+.learn-tabs,
+.learn-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: end;
+}
+.learn-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.learn-stats > .op-btn {
+  text-align: left;
+  justify-content: start;
+  background: white;
+  padding: 20px;
+}
+.learn-stats span {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.learn-stats strong {
+  font-size: 28px;
+  color: var(--accent);
+}
+.learn-stats small {
+  opacity: 0.65;
+}
+.learn-pad,
+.learn-filters {
+  padding: 20px;
+}
+.learn-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.learn .op-card {
+  margin-bottom: 20px;
+  min-width: 0;
+}
+.learn .op-notice {
+  margin-bottom: 20px;
+}
+.learn .op-drawer-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.learn .op-drawer {
+  width: min(800px, 100vw);
+}
+.learn .op-field {
+  min-width: 0;
+  max-width: 100%;
+}
+.learn .op-field input,
+.learn .op-field select,
+.learn .op-field textarea {
+  max-width: 100%;
+}
+.learn .op-context {
+  flex-wrap: wrap;
+}
+.learn .op-btn {
+  min-height: 40px;
+  white-space: normal;
+}
+@media (max-width: 600px) {
+  .learn-stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .learn-filters {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .learn .op-context .op-field {
+    width: 100%;
+  }
+}

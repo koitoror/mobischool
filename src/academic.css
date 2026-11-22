@@ -1,0 +1,342 @@
+.ac-overview {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 20px;
+}
+.ac-overview > .op-card:nth-child(3) {
+  grid-column: 1/-1;
+}
+.ac-time {
+  font-size: 12px;
+  color: #55758e;
+  font-weight: 500;
+}
+.ac-time small {
+  font-size: 10px;
+  color: #96a7b5;
+}
+.ac-coverage-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  border-top: 1px solid #edf1f4;
+  width: 100%;
+  text-align: left;
+}
+.ac-coverage-row b {
+  font-size: 12px;
+  font-weight: 500;
+  color: #57758a;
+}
+.ac-coverage-row small {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+  color: #91a4b2;
+}
+.ac-coverage-row strong {
+  font-size: 17px;
+  font-weight: 600;
+  color: #6387a1;
+}
+.ac-coverage-row > div {
+  width: 100%;
+  height: 4px;
+  background: #edf2f5;
+  border-radius: 2px;
+}
+.ac-coverage-row i {
+  display: block;
+  background: #87acbd;
+  height: 100%;
+  border-radius: 2px;
+}
+.ac-attendance-options {
+  display: flex;
+  gap: 6px;
+}
+.ac-attendance-options > button {
+  font-size: 10px;
+  border: 1px solid #e0e7ec;
+  border-radius: 5px;
+  padding: 6px 10px;
+  color: #8b9ba7;
+  background: white;
+}
+.ac-attendance-options .selected {
+  background: #edf5fa;
+  border-color: #9dbbd1;
+  color: #4c7f9f;
+}
+.ac-attendance-options .selected.present {
+  background: #edf7f1;
+  color: #558c70;
+  border-color: #b5d4c1;
+}
+.ac-attendance-options .selected.absent {
+  background: #fcf0ef;
+  color: #ba7672;
+  border-color: #dfb4b1;
+}
+.ac-attendance-options .selected.late {
+  background: #fcf5e8;
+  color: #b1904f;
+  border-color: #e6d3ad;
+}
+.ac-date label {
+  font-size: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #8b9fac;
+}
+.ac-date input {
+  padding: 6px 8px;
+  font-size: 11px;
+  color: #647e91;
+}
+.ac-week-controls {
+  display: flex;
+  gap: 8px;
+  padding: 0 20px 20px;
+  overflow: auto;
+}
+.ac-week-controls button {
+  font-size: 10px;
+  color: #8aa0b0;
+  border: 1px solid #e2eaf0;
+  padding: 7px 12px;
+  border-radius: 5px;
+  background: #fff;
+  white-space: nowrap;
+}
+.ac-week-controls .active {
+  background: #edf4f9;
+  color: #5982a0;
+  border-color: #b5ccdc;
+}
+.ac-timetable {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(130px, 1fr));
+  overflow: auto;
+  border-top: 1px solid #e6edf2;
+  min-height: 300px;
+}
+.ac-timetable > section {
+  padding: 16px 12px;
+  border-right: 1px solid #e9eff4;
+  min-width: 130px;
+}
+.ac-timetable h3 {
+  font-size: 11px;
+  margin-bottom: 18px;
+  color: #849bab;
+}
+.ac-timetable > section > p {
+  font-size: 10px;
+  color: #a7b6c1;
+  line-height: 1.8;
+}
+.ac-period {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  width: 100%;
+  border: 1px solid #dce8f1;
+  border-left: 2px solid #96b4ca;
+  background: #f5f9fc;
+  border-radius: 6px;
+  padding: 12px 10px;
+  margin: 0 0 12px;
+  overflow-wrap: anywhere;
+}
+.ac-period > span {
+  font-size: 9px;
+  color: #7999b2;
+}
+.ac-period > strong {
+  font-size: 11px;
+  color: #54768f;
+  font-weight: 600;
+}
+.ac-period > small {
+  font-size: 9px;
+  color: #8aa2b5;
+  line-height: 1.7;
+}
+.ac-form-pad {
+  padding: 0 20px 20px;
+}
+.ac-completion {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 11px;
+  color: #6b8496;
+}
+.ac .op-form-error {
+  margin: 0 20px 20px;
+}
+.ac .op-drawer-body .op-form-error {
+  margin: 20px 0;
+}
+.ac .op-drawer-body > .op-btn {
+  margin-top: 20px;
+}
+.ac .op-drawer-body > .op-field {
+  margin: 20px 0;
+}
+.ac .op-notice {
+  line-height: 1.9;
+}
+.ac .op-context > span:last-child {
+  font-size: 9px;
+}
+.ac .op-drawer .op-form-grid {
+  grid-template-columns: 1fr;
+}
+.ac .op-drawer-body > .op-dl {
+  padding: 0;
+  margin: 24px 0;
+}
+.ac-toolbar .op-search {
+  max-width: 310px;
+}
+.ac .op-card .op-selection > span {
+  margin-right: auto;
+  font-size: 11px;
+}
+.ac .op-card .op-selection .op-btn {
+  font-size: 10px;
+}
+@media (max-width: 1000px) {
+  .ac-overview {
+    grid-template-columns: 1fr;
+  }
+  .ac-overview > .op-card:nth-child(3) {
+    grid-column: auto;
+  }
+  .ac .op-context > span:last-child {
+    display: none;
+  }
+  .ac-toolbar {
+    flex-wrap: wrap;
+  }
+  .ac-toolbar .op-search {
+    max-width: none;
+  }
+  .ac .op-stats strong {
+    font-size: 25px;
+  }
+  .ac-week-controls {
+    gap: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .ac-week-controls button {
+    font-size: 9px;
+    padding: 7px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .ac .op-card > header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .ac .op-card > header .ac-date {
+    width: 100%;
+  }
+  .ac-date label {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ac-date input {
+    font-size: 11px;
+  }
+  .ac .op-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ac .op-context > span:last-child {
+    display: none;
+  }
+  .ac-attendance-options > button {
+    padding: 7px;
+    font-size: 9px;
+  }
+  .ac .op-shortcut-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ac-form-pad {
+    padding: 0 16px 20px;
+  }
+  .ac-timetable {
+    grid-template-columns: repeat(5, 150px);
+  }
+  .ac .op-card .op-selection {
+    align-items: center;
+    gap: 8px;
+  }
+  .ac .op-card .op-selection > span {
+    width: 100%;
+  }
+  .ac .op-card .op-selection .op-btn {
+    font-size: 9px;
+  }
+  .ac .op-drawer > header h2 {
+    font-size: 20px;
+  }
+  .ac-toolbar select {
+    min-width: 110px;
+  }
+  .ac .op-form-error {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .ac .op-drawer-body .op-form-error {
+    margin: 20px 0;
+  }
+  .ac .op-heading-actions {
+    justify-content: flex-start;
+  }
+  .ac .op-context > select {
+    width: 100%;
+    max-width: none;
+  }
+  .ac .op-timeline p {
+    font-size: 11px;
+  }
+  .ac .op-pagination {
+    gap: 12px;
+  }
+}
+@media print {
+  body:has(.ac:not([hidden])) .sidebar,
+  body:has(.ac:not([hidden])) .topbar,
+  body:has(.ac:not([hidden])) .breadcrumb,
+  .ac .op-heading-actions,
+  .ac .op-context,
+  .ac .fn-tabs,
+  .ac .op-toolbar,
+  .ac .op-footnote,
+  .ac .ac-week-controls {
+    display: none !important;
+  }
+  .ac-timetable {
+    overflow: visible;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .ac-period {
+    print-color-adjust: exact;
+  }
+  .ac .op-card {
+    break-inside: avoid;
+  }
+  .ac .op-pagination {
+    display: none;
+  }
+}

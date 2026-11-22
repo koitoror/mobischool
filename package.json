@@ -1,0 +1,39 @@
+{
+  "name": "figma-make-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:settings": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/settings.test.ts",
+    "test:acceptance-reference": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/acceptance-reference.test.ts",
+    "test:analytics-closure": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/analytics-closure.test.ts",
+    "test:reports": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/reports.test.ts",
+    "test:cms": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/cms.test.ts",
+    "test:credentials": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/credentials.test.ts",
+    "test:operations": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/operations.test.ts",
+    "test:learning": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/learning.test.ts",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "oxfmt",
+    "test:examination": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/examination.test.ts",
+    "test:finance": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/finance.test.ts",
+    "test:academic": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/academic.test.ts",
+    "test:workforce": "node --no-warnings --loader ./tests/typescript-loader.mjs --test tests/workforce.test.ts"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "oxfmt": "^0.76.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vite": "^8.1.7"
+  }
+}
